@@ -119,6 +119,8 @@ $(() => {
   if (!guestType) {
     $("#brideOrGroom").fadeIn();
     $("#modal-bg").fadeIn();
+  } else {
+    changeGuestType(guestType);
   }
 
   // set guest type to local storage
