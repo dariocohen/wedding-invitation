@@ -9,7 +9,7 @@
 
   body {
     font-family: "didot", sans-serif;
-    color: #2f2e2e;
+    @apply bg-white text-[#2f2e2e];
   }
 
   section {
