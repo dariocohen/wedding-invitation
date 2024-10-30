@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    font-family: "didot", sans-serif;
+    color: #2f2e2e;
+  }
+
+  section {
+    @apply relative;
+  }
+
+  #groom.active, #bride.active {
+    @apply bg-slate-300;
+  }
+}
