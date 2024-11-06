@@ -234,4 +234,9 @@ $(() => {
    * AOS
    */
   AOS.init();
+
+  /**
+   * Hide preloader
+   */
+  $("#preloader").fadeOut();
 });
