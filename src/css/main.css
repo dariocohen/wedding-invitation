@@ -9,14 +9,5 @@
 
   body {
     font-family: "didot", "Montserrat-Regular", sans-serif;
-    @apply bg-white text-[#2f2e2e];
-  }
-
-  section {
-    @apply relative;
-  }
-
-  #groom.active, #bride.active {
-    @apply bg-slate-300;
   }
 }

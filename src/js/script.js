@@ -1,5 +1,7 @@
 import $ from "jquery";
 import Swiper from "swiper";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 $(() => {
   /**
@@ -73,6 +75,21 @@ $(() => {
       }
     });
   });
+
+  // scroll to section on load if have hash in url
+  if (window.location.hash) {
+    const hash = window.location.hash;
+    const target = $(hash);
+
+    if (target.length) {
+      $("html, body").animate(
+        {
+          scrollTop: target.offset().top,
+        },
+        200
+      );
+    }
+  }
 
   /**
    * Swiper
@@ -210,4 +227,9 @@ $(() => {
 
     alert("Form submitted successfully");
   });
+
+  /**
+   * AOS
+   */
+  AOS.init();
 });
