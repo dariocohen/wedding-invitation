@@ -1,5 +1,7 @@
 import $ from "jquery";
+
 import Swiper from "swiper";
+
 import AOS from "aos";
 import "aos/dist/aos.css";
 
