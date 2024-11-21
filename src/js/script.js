@@ -41,42 +41,20 @@ $(() => {
    * Menu active state
    */
   $("nav a").on("click", function () {
-    $("nav a").removeClass("text-secondary");
-    $(this).addClass("text-secondary");
+    $(".header-line").removeClass("scale-x-100");
+    $(this).find(".header-line").addClass("scale-x-100");
   });
 
   // when have hash in url add active class
   if (window.location.hash) {
     const hash = window.location.hash;
-    $("nav a").removeClass("text-secondary");
-    $('a[href="' + hash + '"]').addClass("text-secondary");
+    const target = $(`nav a[href="${hash}"]`);
+
+    if (target.length) {
+      $(".header-line").removeClass("scale-x-100");
+      target.find(".header-line").addClass("scale-x-100");
+    }
   }
-
-  // active class on scroll and change url
-  const sections = $("section");
-  const nav = $("nav");
-
-  $(window).on("scroll", function () {
-    const curPos = $(this).scrollTop();
-
-    sections.each(function () {
-      const top = $(this).offset().top - 20;
-      const bottom = top + $(this).outerHeight();
-
-      if (curPos >= top && curPos <= bottom) {
-        nav.find("a").removeClass("text-secondary");
-        nav
-          .find('a[href="#' + $(this).attr("id") + '"]')
-          .addClass("text-secondary");
-
-        if (history.pushState) {
-          history.pushState(null, null, "#" + $(this).attr("id"));
-        } else {
-          location.hash = "#" + $(this).attr("id");
-        }
-      }
-    });
-  });
 
   // scroll to section on load if have hash in url
   if (window.location.hash) {
@@ -98,9 +76,7 @@ $(() => {
    */
   const swiper = new Swiper(".swiper-container", {
     loop: true,
-    autoplay: {
-      delay: 1000,
-    },
+    autoplay: true,
     pagination: false,
   });
 
@@ -199,7 +175,9 @@ $(() => {
     }
 
     const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+    const hours = Math.floor(
+      (distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
+    );
     const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
     const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
@@ -218,16 +196,31 @@ $(() => {
     e.preventDefault();
 
     const name = $("#name").val();
-    const email = $("#email").val();
-    const phone = $("#phone").val();
-    const guests = $("#guests").val();
+    const email = $("#email").val() || "N/A";
+    const phone = $("#phone").val() || "N/A";
+    const guests = $("#guests").val() || "N/A";
 
-    if (!name || !email || !phone || !guests) {
+    if (!name) {
       alert("Please fill in all fields");
       return;
     }
 
-    alert("Form submitted successfully");
+    // send form data to https://formspree.io/f/xpwzlkbr
+    $.ajax({
+      url: "https://formspree.io/f/xpwzlkbr",
+      method: "POST",
+      data: {
+        name,
+        email,
+        phone,
+        guests,
+      },
+      dataType: "json",
+      success: () => {
+        alert("Cảm ơn Quý khách đã xác nhận tham dự tiệc cưới của chúng tôi!");
+        $("form")[0].reset();
+      },
+    });
   });
 
   /**

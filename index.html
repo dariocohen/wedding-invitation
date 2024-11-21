@@ -86,30 +86,61 @@
     </div>
 
     <nav
-      class="fixed z-40 md:top-14 md:left-16 md:w-24 md:h-fit bg-main md:bg-transparent w-full h-screen flex items-center justify-center transition-transform duration-300 transform translate-x-full md:translate-x-0 group-[&.menu-open]:translate-x-0 p-2 rounded-lg md:bg-opacity-60">
-      <ul class="flex flex-col w-40">
+      class="fixed z-40 md:top-14 md:left-16 md:w-fit md:h-fit bg-main md:bg-transparent w-full h-screen flex items-center justify-center transition-transform duration-300 transform translate-x-full md:translate-x-0 group-[&.menu-open]:translate-x-0 p-2 rounded-lg md:bg-opacity-60">
+      <ul class="flex flex-col">
         <li class="w-full relative md:h-12 h-16 border-b border-secondary/30 md:border-none">
           <a href="#home"
-            class="w-full h-full text-secondary hover:text-secondary transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start">
-            <span>Home</span>
+            class="w-full h-full transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start group/link">
+            <span class="relative">
+              Home
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover/link:scale-x-100 header-line">
+              </span>
+            </span>
           </a>
         </li>
         <li class="w-full relative md:h-12 h-16 border-b border-secondary/30 md:border-none">
           <a href="#story"
-            class="w-full h-full hover:text-secondary transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start">
-            <span>Our Story</span>
+            class="w-full h-full transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start group/link">
+            <span class="relative">
+              Chuyện tình yêu
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover/link:scale-x-100 header-line">
+              </span>
+            </span>
           </a>
         </li>
         <li class="w-full relative md:h-12 h-16 border-b border-secondary/30 md:border-none">
           <a href="#details"
-            class="w-full h-full hover:text-secondary transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start">
-            <span>Details</span>
+            class="w-full h-full transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start group/link">
+            <span class="relative">
+              Sự kiện cưới
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover/link:scale-x-100 header-line">
+              </span>
+            </span>
           </a>
         </li>
         <li class="w-full relative md:h-12 h-16 border-b border-secondary/30 md:border-none">
           <a href="#registry"
-            class="w-full h-full hover:text-secondary transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start">
-            <span>Registry</span>
+            class="w-full h-full transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start group/link">
+            <span class="relative">
+              Xác nhận tham dự
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover/link:scale-x-100 header-line">
+              </span>
+            </span>
+          </a>
+        </li>
+        <li class="w-full relative md:h-12 h-16 border-b border-secondary/30 md:border-none">
+          <a href="#wedding-gift"
+            class="w-full h-full transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start group/link">
+            <span class="relative">
+              Mừng cưới
+              <span
+                class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover/link:scale-x-100 header-line">
+              </span>
+            </span>
           </a>
         </li>
       </ul>
@@ -117,8 +148,10 @@
   </header>
 
   <main class="w-full overflow-x-hidden">
-    <div class="fixed top-0 left-0 w-screen h-screen z-[-1]">
-      <img loading="lazy" src="/images/bg.jpg" alt="background" class="w-full h-full object-cover" />
+    <div class="fixed top-0 left-0 w-screen h-screen z-[-1] flex flex-col items-center justify-end">
+      <div class="w-full h-full">
+        <img loading="lazy" src="/images/background.webp" alt="background" class="w-full h-full object-cover" />
+      </div>
     </div>
 
     <section id="home" class="relative">
@@ -131,7 +164,7 @@
         </h1>
 
         <div class="text-xl">
-          Trân trọng kính mời Quý Khách
+          Trân trọng kính mời Quý Khách!
         </div>
 
         <div class="absolute bottom-8 animate-bounce">
@@ -166,18 +199,23 @@
           <div class="swiper default-carousel swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
-                <div class="w-full h-fit md:h-[576px] relative">
-                  <img loading="lazy" src="/images/1.svg" alt="image" class="w-full h-full object-cover" />
+                <div class="w-full h-fit md:h-[576px] relative rounded-lg overflow-hidden">
+                  <img loading="lazy" src="/images/image_1.jpg" alt="image" class="w-full h-full object-cover" />
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="w-full h-fit md:h-[576px] relative">
-                  <img loading="lazy" src="/images/2.svg" alt="image" class="w-full h-full object-cover" />
+                <div class="w-full h-fit md:h-[576px] relative rounded-lg overflow-hidden">
+                  <img loading="lazy" src="/images/image_2.jpg" alt="image" class="w-full h-full object-cover" />
                 </div>
               </div>
               <div class="swiper-slide">
-                <div class="w-full h-fit md:h-[576px] relative">
-                  <img loading="lazy" src="/images/3.svg" alt="image" class="w-full h-full object-cover" />
+                <div class="w-full h-fit md:h-[576px] relative rounded-lg overflow-hidden">
+                  <img loading="lazy" src="/images/image_3.jpg" alt="image" class="w-full h-full object-cover" />
+                </div>
+              </div>
+              <div class="swiper-slide">
+                <div class="w-full h-fit md:h-[576px] relative rounded-lg overflow-hidden">
+                  <img loading="lazy" src="/images/image_4.jpg" alt="image" class="w-full h-full object-cover" />
                 </div>
               </div>
             </div>
@@ -226,6 +264,10 @@
                   <span class="text-xl">Giây</span>
                 </div>
               </div>
+            </div>
+
+            <!-- The calendar -->
+            <div class="flex flex-col space-y-4 mt-10" data-aos="fade-right" data-aos-delay="300">
             </div>
           </div>
 
@@ -456,8 +498,8 @@
           <div class="w-full md:w-[710px] px-1 py-10 md:px-10 md:py-20 bg-white bg-opacity-60 md:rounded-lg"
             data-aos="zoom-in">
             <h2
-              class="tracking-[1em] text-xl font-brandon uppercase flex flex-col items-center justify-center gap-2 xl:flex-row xl:gap-0 lg:text-2xl xl:text-3xl mb-4">
-              <span>Let's party</span>
+              class="tracking-[1em] text-2xl font-brandon uppercase flex flex-col items-center justify-center gap-2 xl:text-3xl xl:flex-row xl:gap-0 mb-4">
+              <span class="text-center">Let's party</span>
             </h2>
             <p class="text-xl text-center">
               Sự hiện diện của Quý Khách là niềm vinh dự lớn lao với gia đình chúng tôi.
@@ -468,6 +510,40 @@
                 data-modal="#registryModal">
                 Xác nhận tham dự
               </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="wedding-gift" class="relative">
+      <!-- 2 bank QR codes with bank info -->
+      <div class="w-full bg-gray-50 py-20 md:py-40">
+        <div class="flex flex-col items-center w-full">
+          <h2
+            class="tracking-[1em] text-2xl font-brandon uppercase flex flex-col items-center justify-center gap-2 xl:text-3xl xl:flex-row mb-16">
+            <span class="text-center">Wedding Gift</span>
+          </h2>
+
+          <p class="text-xl px-4 max-w-4xl text-center" data-aos="fade-right" data-aos-delay="300">
+            Chúng tôi vô cùng biết ơn và trân trọng sự chúc phúc của Quý Khách.
+          </p>
+
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-10">
+            <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg" data-aos="fade-right"
+              data-aos-delay="400">
+              <img loading="lazy" src="/images/vietcombank.jpg" alt="qr-code" class="w-60 h-60 object-cover" />
+              <p class=" mt-4">Ngân hàng Vietcombank</p>
+              <p>STK: 0541000346532</p>
+              <p>Chủ TK: BUI THANH XUAN</p>
+            </div>
+
+            <div class="flex flex-col items-center p-4 bg-white rounded-lg shadow-lg" data-aos="fade-left"
+              data-aos-delay="400">
+              <img loading="lazy" src="/images/mbbank.jpg" alt="qr-code" class="w-60 h-60 object-cover" />
+              <p class="mt-4">Ngân hàng MBBank</p>
+              <p>STK: 240424048888</p>
+              <p>Chủ TK: TRAN THU UYEN</p>
             </div>
           </div>
         </div>
@@ -571,12 +647,12 @@
 
           <div class="flex flex-col space-y-2">
             <label for="email" class="text-lg">Email</label>
-            <input type="email" id="email" name="email" class="p-2 border border-gray-200 rounded-md" required />
+            <input type="email" id="email" name="email" class="p-2 border border-gray-200 rounded-md" />
           </div>
 
           <div class="flex flex-col space-y-2">
             <label for="phone" class="text-lg">Số điện thoại</label>
-            <input type="tel" id="phone" name="phone" class="p-2 border border-gray-200 rounded-md" required />
+            <input type="tel" id="phone" name="phone" class="p-2 border border-gray-200 rounded-md" />
           </div>
 
           <div class="flex flex-col space-y-2">
@@ -602,7 +678,7 @@
 
       <a href="" target="_blank"
         class="bg-secondary text-white px-8 py-2 rounded-full hover:bg-slate-300 transition-colors duration-300">
-        Bạn hữu
+        Friends
       </a>
     </div>
   </div>
