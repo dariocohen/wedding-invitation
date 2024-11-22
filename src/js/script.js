@@ -1,6 +1,7 @@
 import $ from "jquery";
 
 import Swiper from "swiper";
+import { Navigation, Autoplay } from "swiper/modules";
 
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -45,23 +46,15 @@ $(() => {
     $(this).find(".header-line").addClass("scale-x-100");
   });
 
-  // when have hash in url add active class
-  if (window.location.hash) {
-    const hash = window.location.hash;
-    const target = $(`nav a[href="${hash}"]`);
-
-    if (target.length) {
-      $(".header-line").removeClass("scale-x-100");
-      target.find(".header-line").addClass("scale-x-100");
-    }
-  }
-
   // scroll to section on load if have hash in url
   if (window.location.hash) {
     const hash = window.location.hash;
     const target = $(hash);
 
     if (target.length) {
+      $(".header-line").removeClass("scale-x-100");
+      $(`nav a[href="${hash}"]`).find(".header-line").addClass("scale-x-100");
+
       $("html, body").animate(
         {
           scrollTop: target.offset().top,
@@ -69,6 +62,8 @@ $(() => {
         200
       );
     }
+  } else {
+    $("nav a").find(".header-line").first().addClass("scale-x-100");
   }
 
   /**
@@ -76,16 +71,14 @@ $(() => {
    */
   const swiper = new Swiper(".swiper-container", {
     loop: true,
-    autoplay: true,
-    pagination: false,
-  });
-
-  $(".swiper-button-next").on("click", () => {
-    swiper.slideNext();
-  });
-
-  $(".swiper-button-prev").on("click", () => {
-    swiper.slidePrev();
+    autoplay: {
+      delay: 3000,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    modules: [Navigation, Autoplay],
   });
 
   /**
