@@ -116,6 +116,26 @@
   src: url("/fonts/Montserrat-Thin.ttf") format("truetype");
   font-display: swap;
 }
+@font-face {
+  font-family: "DancingScript-Regular";
+  src: url("/fonts/DancingScript-Regular.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "DancingScript-Bold";
+  src: url("/fonts/DancingScript-Bold.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "DancingScript-Medium";
+  src: url("/fonts/DancingScript-Medium.ttf") format("truetype");
+  font-display: swap;
+}
+@font-face {
+  font-family: "DancingScript-SemiBold";
+  src: url("/fonts/DancingScript-SemiBold.ttf") format("truetype");
+  font-display: swap;
+}
 
 .font-brandon {
   font-family: "brandon-grot-w01-light", sans-serif;
@@ -127,6 +147,14 @@
 
 .font-didot {
   font-family: "didot", sans-serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat-Regular", sans-serif;
+}
+
+.font-dancing {
+  font-family: "DancingScript-Regular", sans-serif;
 }
 
 .font-helvetica {
