@@ -5,8 +5,7 @@ export default {
     extend: {
       colors: {
         main: "#F7E9E8",
-        secondary: "#A0A09C",
-        trim: "#c89d9c",
+        secondary: "#c89d9c",
         text: "#2f2e2e",
       },
       screens: {
