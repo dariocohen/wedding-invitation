@@ -617,7 +617,7 @@
             <img loading="lazy" src="/images/invitation-right-img.png" alt="invitation" class="w-[300px]" />
           </div>
 
-          <div class="border border-secondary px-4 py-10 text-center">
+          <div class="border border-secondary px-4 py-10 text-center relative z-10">
             <h3 class="font-dancing text-4xl mb-4" data-aos="fade-right" data-aos-delay="100">
               Save the Date
             </h3>
@@ -768,7 +768,7 @@
   </div>
 
   <div
-    class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white z-30 p-4 rounded-md shadow-lg hidden modal min-w-80 max-w-[calc(90vw)] max-h-[calc(90vh)]"
+    class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white z-30 p-4 rounded-md shadow-lg hidden modal w-[800px] max-w-[calc(90vw)] max-h-[calc(90vh)]"
     id="registryModal">
     <div class="flex justify-between items-center">
       <h2 class="text-xl font-bold">Xác nhận tham dự</h2>
@@ -777,49 +777,10 @@
       </button>
     </div>
 
-    <div class="mt-4" id="brideFriendly">
-      <form method="POST" id="registryForm" class="flex flex-col space-y-4">
-        <div class="flex flex-col space-y-4">
-          <div class="flex flex-col space-y-2">
-            <label for="name" class="text-lg">Họ và tên</label>
-            <input type="text" id="name" name="name" class="p-2 border border-gray-200 rounded-md" required />
-          </div>
-
-          <div class="flex flex-col space-y-2">
-            <label for="email" class="text-lg">Email</label>
-            <input type="email" id="email" name="email" class="p-2 border border-gray-200 rounded-md" />
-          </div>
-
-          <div class="flex flex-col space-y-2">
-            <label for="phone" class="text-lg">Số điện thoại</label>
-            <input type="tel" id="phone" name="phone" class="p-2 border border-gray-200 rounded-md" />
-          </div>
-
-          <div class="flex flex-col space-y-2">
-            <label for="guests" class="text-lg">Số lượng khách tham dự</label>
-            <input type="number" id="guests" name="guests" class="p-2 border border-gray-200 rounded-md" required />
-          </div>
-
-          <div class="flex justify-center">
-            <button type="submit"
-              class="bg-secondary text-white px-8 py-2 rounded-full hover:bg-slate-300 transition-colors duration-300">
-              Xác nhận
-            </button>
-          </div>
-        </div>
-      </form>
-    </div>
-
-    <div class="mt-4 flex space-x-2 justify-center" id="groomFriendly">
-      <a href="" target="_blank"
-        class="bg-secondary text-white px-8 py-2 rounded-full hover:bg-slate-300 transition-colors duration-300">
-        Hachinet
-      </a>
-
-      <a href="" target="_blank"
-        class="bg-secondary text-white px-8 py-2 rounded-full hover:bg-slate-300 transition-colors duration-300">
-        Friends
-      </a>
+    <div class="mt-4">
+      <iframe
+        src="https://docs.google.com/forms/d/e/1FAIpQLScHABjiDeGoZ4J_H7PxZbx9Wx44Kr85LrzGuGbTShC_xii0dQ/viewform?embedded=true"
+        frameborder="0" marginheight="0" marginwidth="0" class="w-full h-[80vh]"></iframe>
     </div>
   </div>
 

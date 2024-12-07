@@ -107,16 +107,12 @@ $(() => {
         $("#bride-timeline").removeClass("hidden").addClass("flex");
         $("#groomBtn").addClass("hidden");
         $("#brideBtn").removeClass("hidden");
-        $("#brideFriendly").removeClass("hidden");
-        $("#groomFriendly").addClass("hidden");
         break;
       case "groom":
         $("#bride-timeline").addClass("hidden");
         $("#groom-timeline").removeClass("hidden").addClass("flex");
         $("#brideBtn").addClass("hidden");
         $("#groomBtn").removeClass("hidden");
-        $("#groomFriendly").removeClass("hidden");
-        $("#brideFriendly").addClass("hidden");
         break;
     }
   };
