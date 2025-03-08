@@ -151,7 +151,7 @@ $(() => {
   /**
    * Countdown
    */
-  const weddingDate = new Date("2025-01-01T14:00:00").getTime();
+  const weddingDate = new Date("2025-11-08T19:00:00").getTime();
 
   const daysEl = $("#days");
   const hoursEl = $("#hours");
