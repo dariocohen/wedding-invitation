@@ -4,9 +4,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        main: "#F7E9E8",
-        secondary: "#c89d9c",
-        text: "#2f2e2e",
+        main: "#A50000",
+        secondary: "#00A6A6",
+        text: "#2e2f2e",
       },
       screens: {
         xs: "475px",

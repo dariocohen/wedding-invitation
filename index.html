@@ -4,8 +4,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Thanh Xuân & Thu Uyên - Wedding Invitation</title>
-  <meta name="description" content="Trân trọng kính mời Quý Khách tới dự Lễ Cưới cùng gia đình chúng tôi" />
+  <title>Da y Lu</title>
+  <meta name="description" content="Fiesta de Casamiento" />
 
   <!-- favicon -->
   <link rel="icon" href="/images/favicon.png" type="image/x-icon" />
@@ -13,8 +13,8 @@
 
   <!-- og meta -->
   <meta property="og:type" value="website" />
-  <meta property="og:title" value="Thanh Xuân & Thu Uyên - Wedding Invitation" />
-  <meta property="og:description" value="Trân trọng kính mời Quý Khách tới dự Lễ Cưới cùng gia đình chúng tôi" />
+  <meta property="og:title" value="Da y Lu" />
+  <meta property="og:description" value="Fiesta de Casamiento" />
   <meta property="og:page_url" value="https://wedding.klpod221.site/" />
   <meta property="og:image" value="https://wedding.klpod221.site/images/bg.jpg" />
   <meta property="og:image:image_url" value="https://wedding.klpod221.site/" />
@@ -30,7 +30,7 @@
       inset: 0;
       z-index: 9999;
       overflow: hidden;
-      background-color: #F7E9E8;
+      background-color: #6f70b9;
       transition: all 0.6s ease-out;
       width: 100vw;
       height: 100vh;
@@ -40,7 +40,7 @@
     #preloader:after {
       content: "";
       position: absolute;
-      border: 4px solid #A0A09C;
+      border: 4px solid #6f70b9;
       border-radius: 50%;
       animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
     }
@@ -69,91 +69,18 @@
   </style>
 </head>
 
-<body class="bg-white text-text font-sans">
+<body class="bg-primary-light text-text font-sans">
   <div id="preloader"></div>
 
   <header class="group">
-<!--
-    <div class="fixed z-50 top-4 right-4 p-4 md:hidden cursor-pointer" id="hamburger">
-      <div class="grid justify-items-center gap-1.5">
-        <div
-          class="w-6 h-[2px] rounded-full bg-text transition group-[&.menu-open]:rotate-45 group-[&.menu-open]:translate-y-1.5">
-        </div>
-        <div class="w-6 h-[2px] rounded-full bg-text transition group-[&.menu-open]:scale-x-0"></div>
-        <div
-          class="w-6 h-[2px] rounded-full bg-text group-[&.menu-open]:-rotate-45 group-[&.menu-open]:-translate-y-2.5">
-        </div>
-      </div>
-    </div>
-    <nav
-      class="fixed md:opacity-40 md:hover:opacity-100 opacity-100 z-40 md:top-14 left-2 xl:left-16 md:w-fit md:h-fit bg-main md:bg-transparent w-full h-screen flex items-center justify-center transition-all duration-300 transform translate-x-full md:translate-x-0 group-[&.menu-open]:translate-x-0 p-2 rounded-lg md:bg-opacity-60">
-      <ul class="flex flex-col">
-        <li class="w-full relative md:h-12 h-16 border-b border-secondary/30 md:border-none">
-          <a href="#home"
-            class="w-full h-full transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start group/link">
-            <span class="relative">
-              Home
-              <span
-                class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover/link:scale-x-100 header-line">
-              </span>
-            </span>
-          </a>
-        </li>
-        <li class="w-full relative md:h-12 h-16 border-b border-secondary/30 md:border-none">
-          <a href="#story"
-            class="w-full h-full transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start group/link">
-            <span class="relative">
-              Chuyện tình yêu
-              <span
-                class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover/link:scale-x-100 header-line">
-              </span>
-            </span>
-          </a>
-        </li>
-        <li class="w-full relative md:h-12 h-16 border-b border-secondary/30 md:border-none">
-          <a href="#details"
-            class="w-full h-full transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start group/link">
-            <span class="relative">
-              Sự kiện cưới
-              <span
-                class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover/link:scale-x-100 header-line">
-              </span>
-            </span>
-          </a>
-        </li>
-        <li class="w-full relative md:h-12 h-16 border-b border-secondary/30 md:border-none">
-          <a href="#registry"
-            class="w-full h-full transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start group/link">
-            <span class="relative">
-              Xác nhận tham dự
-              <span
-                class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover/link:scale-x-100 header-line">
-              </span>
-            </span>
-          </a>
-        </li>
-        <li class="w-full relative md:h-12 h-16 border-b border-secondary/30 md:border-none">
-          <a href="#wedding-gift"
-            class="w-full h-full transition-colors duration-300 flex items-center text-xl justify-center md:text-base md:justify-start group/link">
-            <span class="relative">
-              Mừng cưới
-              <span
-                class="absolute bottom-0 left-0 w-full h-0.5 bg-secondary origin-left transform scale-x-0 transition-transform duration-300 ease-out group-hover/link:scale-x-100 header-line">
-              </span>
-            </span>
-          </a>
-        </li>
-      </ul>
-    </nav>
--->
   </header>
 
   <main class="w-full overflow-x-hidden">
 
     <section id="home" class="relative w-screen h-screen">
-      <div class="fixed top-0 left-0 w-screen h-screen -z-10 flex flex-col items-center justify-end">
+      <div class="fixed top-0 left-0 w-screen h-screen -z-10 flex flex-col items-center justify-end" />
         <div class="w-full h-full">
-          <img loading="lazy" src="/images/background.webp" alt="background" class="w-full h-full object-cover" />
+          <img loading="lazy" src="/images/IMG_0057.JPG" alt="background" class="object-cover w-auto h-full mx-auto" />
         </div>
       </div>
 
@@ -167,73 +94,11 @@
         </div>
       </div>
     </section>
-<!--
-    <section id="story" class="relative">
-      <div class="w-full bg-gray-50">
-        <div class="w-full py-20 md:pt-32 md:pb-40 bg-main">
-          <div class="flex flex-col items-center w-full">
-            <h2
-              class="tracking-widest font-dancing font-bold text-4xl font-brandon flex flex-col items-center justify-center gap-2 xl:flex-row xl:gap-0 mb-16"
-              data-aos="fade-left">
-              <span>She Said Yes</span>
-            </h2>
-
-            <p class="md:text-lg px-4 max-w-3xl text-center" data-aos="fade-right" data-aos-delay="300">
-              Chúng tôi đã cùng nhau đi qua 5 năm với bao niềm vui và nỗi buồn.
-              Nhưng mỗi khó khăn vượt qua chỉ làm tình yêu thêm bền chặt. Đám
-              cưới này là kết quả ngọt ngào của chặng đường ấy, đánh dấu một
-              bước ngoặt lớn trong cuộc đời chúng tôi, và mở ra một hành trình
-              mới – hành trình của một gia đình hạnh phúc và bền vững.
-            </p>
-          </div>
-        </div>
-
-        <div class="w-full relative max-w-5xl mx-auto p-2 -mt-12 md:-mt-20">
-          <div class="swiper default-carousel swiper-container">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide">
-                <div class="w-full h-fit md:h-[576px] relative rounded-lg overflow-hidden">
-                  <img src="/images/image_1.webp" alt="image" class="w-full h-full object-cover" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-full h-fit md:h-[576px] relative rounded-lg overflow-hidden">
-                  <img src="/images/image_2.webp" alt="image" class="w-full h-full object-cover" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-full h-fit md:h-[576px] relative rounded-lg overflow-hidden">
-                  <img src="/images/image_3.webp" alt="image" class="w-full h-full object-cover" />
-                </div>
-              </div>
-              <div class="swiper-slide">
-                <div class="w-full h-fit md:h-[576px] relative rounded-lg overflow-hidden">
-                  <img src="/images/image_4.webp" alt="image" class="w-full h-full object-cover" />
-                </div>
-              </div>
-            </div>
-            <div class="swiper-button-next absolute top-1/2 right-4 transform -translate-y-1/2 z-10 cursor-pointer">
-              <i class="fas fa-chevron-right text-3xl text-white"></i>
-            </div>
-            <div class="swiper-button-prev absolute top-1/2 left-4 transform -translate-y-1/2 z-10 cursor-pointer">
-              <i class="fas fa-chevron-left text-3xl text-white"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
--->
     <section id="details" class="relative">
       <div class="w-full bg-gray-50 py-10 md:py-28 px-1">
         <div class="flex flex-wrap max-w-4xl mx-auto">
           <div class="w-full md:w-1/2 p-4 relative">
-              <!--
-            <div class="absolute top-0 left-10 z-0" data-aos="fade-right" data-aos-delay="100">
-              <img loading="lazy" src="/images/branch.png" alt="branch" class="scale-90" />
-            </div>
--->
-
-            <div class="tracking-[1em] text-2xl md:text-3xl font-brandon uppercase z-10 relative mt-10"
+            <div class="tracking-[1em] text-2xl md:text-2xl font-brandon uppercase z-10 relative mt-10"
               data-aos="fade-right">
               <p>Fiesta</p>
               <p>De</p>
@@ -350,43 +215,26 @@
             <div class="flex flex-col space-y-8">
               <div class="flex flex-col space-y-2">
                 <h3 class="text-secondary text-2xl font-bold" data-aos="fade-left" data-aos-delay="300">
-                    Lugar
+                  Lugar
                 </h3>
 
                 <p class="text-xl" data-aos="fade-left" data-aos-delay="350">
-                    Ecoparque
+                  Ecoparque
                 </p>
                 <p data-aos="fade-left" data-aos-delay="400">
-                    Av Sarmiento 2725, Cdad. Autónoma de Buenos Aires, Argentina
+                  Av Sarmiento 2725, Cdad. Autónoma de Buenos Aires, Argentina
                 </p>
-                <p data-aos="fade-left" data-aos-delay="450">
-                  <button
-                    class="underline text-base hover:text-secondary transition-colors duration-300 cursor-pointer modal-open"
-                    data-modal="#groomMap">
-                    <i class="fas fa-map-marker-alt"></i> Ver ubicación
-                  </button>
-                </p>
-              </div>
-            </div>
-            <div class="flex flex-col space-y-8">
-              <div class="flex flex-col space-y-2">
                 <h3 class="text-secondary text-2xl font-bold" data-aos="fade-left" data-aos-delay="300">
-                    Hora
+                  Hora
                 </h3>
-
                 <p class="text-xl" data-aos="fade-left" data-aos-delay="350">
-                    19hs
+                  18hs
                 </p>
-              </div>
-            </div>
-            <div class="flex flex-col space-y-8">
-              <div class="flex flex-col space-y-2">
                 <h3 class="text-secondary text-2xl font-bold" data-aos="fade-left" data-aos-delay="300">
-                    Código de Vestimenta
+                  Código de Vestimenta
                 </h3>
-
                 <p class="text-xl" data-aos="fade-left" data-aos-delay="350">
-                    Elegante
+                  Elegante
                 </p>
               </div>
             </div>
@@ -394,103 +242,13 @@
         </div>
       </div>
     </section>
-
-    <section id="registry" class="w-full py-28 px-4 sm:py-40 bg-[url('/images/bg.png')]">
-      <div class="w-full h-full flex items-center justify-center">
-        <div class="relative bg-white p-6 sm:p-10" data-aos="fade-right">
-          <div class="absolute -left-16 -top-24">
-            <img loading="lazy" src="/images/invitation-left-img.png" alt="invitation" class="w-[150px]" />
-          </div>
-
-          <div class="absolute -right-20 -bottom-16">
-            <img loading="lazy" src="/images/invitation-right-img.png" alt="invitation" class="w-[300px]" />
-          </div>
-
-          <div class="border border-secondary px-4 py-10 text-center relative z-10">
-            <h3 class="font-dancing text-4xl mb-4" data-aos="fade-right" data-aos-delay="100">
-              Save the Date
-            </h3>
-            <p class="text-secondary" data-aos="fade-right" data-aos-delay="150">
-              For the wedding of
-            </p>
-            <h3 class="text-2xl xs:text-3xl font-brandon font-bold mb-2" data-aos="fade-right" data-aos-delay="200">
-              Thanh Xuân & Thu Uyên
-            </h3>
-            <p class="mb-6 text-lg" data-aos="fade-right" data-aos-delay="250">
-              Sự hiện diện của Quý Khách là niềm vinh dự và hạnh phúc của gia đình chúng
-              tôi.
-            </p>
-            <button
-              class="bg-secondary text-white px-8 py-2 rounded-full hover:bg-slate-300 transition-colors duration-300 modal-open"
-              data-modal="#registryModal" data-aos="fade-right" data-aos-delay="300">
-              Xác nhận tham dự
-            </button>
-          </div>
-        </div>
-      </div>
-    </section>
-
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
   </main>
-
-  <!-- modal bg -->
-  <div class="fixed top-0 left-0 w-screen h-screen bg-black bg-opacity-50 z-20 hidden modal-close" id="modal-bg"></div>
-
-  <div
-    class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white z-30 p-4 rounded-md shadow-lg hidden modal min-w-80 max-w-[calc(90vw)] max-h-[calc(90vh)]"
-    id="brideMap">
-    <div class="flex justify-between items-center">
-      <h2 class="text-xl font-bold">Địa điểm nhà gái</h2>
-      <button class="text-red-500 cursor-pointer modal-close">
-        <i class="fas fa-times"></i>
-      </button>
-    </div>
-
-    <div class="mt-4 h-[400px] md:h-[600px] w-[800px] overflow-auto max-w-full max-h-full">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1303.4357952293435!2d105.86438038879447!3d21.434543322339515!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31351f2ffef1f037%3A0xb0370825ce599bd4!2zMTQxIFBo4bqhbSBWxINuIMSQ4buTbmcsIEjhu5NuZyBUaeG6v24sIFBo4buVIFnDqm4sIFRow6FpIE5ndXnDqm4sIFZpZXRuYW0!5e1!3m2!1sen!2s!4v1730281265530!5m2!1sen!2s"
-        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        class="w-full h-full"></iframe>
-    </div>
-  </div>
-
-  <div
-    class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white z-30 p-4 rounded-md shadow-lg hidden modal min-w-80 max-w-[calc(90vw)] max-h-[calc(90vh)]"
-    id="groomMap">
-    <div class="flex justify-between items-center">
-      <h2 class="text-xl font-bold">Địa điểm nhà trai</h2>
-      <button class="text-red-500 cursor-pointer modal-close">
-        <i class="fas fa-times"></i>
-      </button>
-    </div>
-
-    <div class="mt-4 h-[400px] md:h-[600px] w-[800px] overflow-auto max-w-full max-h-full">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d1209.783598012375!2d106.24910726963502!3d20.273188256849686!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zMjDCsDE2JzIzLjUiTiAxMDbCsDE0JzU5LjEiRQ!5e1!3m2!1sen!2s!4v1730281204747!5m2!1sen!2s"
-        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-        class="w-full h-full"></iframe>
-    </div>
-  </div>
-
-  <div
-    class="fixed top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-white z-30 p-4 rounded-md shadow-lg hidden modal w-[800px] max-w-[90vw] h-[80vh]"
-    id="registryModal">
-    <div class="flex justify-between items-center">
-      <h2 class="text-xl font-bold">Xác nhận tham dự</h2>
-      <button class="text-red-500 cursor-pointer modal-close">
-        <i class="fas fa-times"></i>
-      </button>
-    </div>
-
-    <div class="mt-4">
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLScHABjiDeGoZ4J_H7PxZbx9Wx44Kr85LrzGuGbTShC_xii0dQ/viewform?embedded=true"
-        frameborder="0" marginheight="0" marginwidth="0" class="w-full h-[calc(80vh-4rem)]" id="groomForm">Loading…</iframe>
-
-      <iframe
-        src="https://docs.google.com/forms/d/e/1FAIpQLSc0uVgy1KLo6y6Tnh9DpynaHn9gj3vHXcL4m8sJ4mPtip8L3A/viewform?embedded=true"
-        frameborder="0" marginheight="0" marginwidth="0" class="w-full h-[calc(80vh-4rem)] hidden" id="brideForm">Loading…</iframe>
-    </div>
-  </div>
 
   <script type="module" src="/src/js/main.js"></script>
 </body>
