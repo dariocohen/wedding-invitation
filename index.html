@@ -12,16 +12,17 @@
   <link rel="shortcut icon" href="/images/favicon.png" type="image/x-icon" />
 
   <!-- og meta -->
-  <meta property="og:type" value="website" />
-  <meta property="og:title" value="Da y Lu" />
-  <meta property="og:description" value="Fiesta de Casamiento" />
-  <meta property="og:page_url" value="https://wedding.klpod221.site/" />
-  <meta property="og:image" value="https://wedding.klpod221.site/images/bg.jpg" />
-  <meta property="og:image:image_url" value="https://wedding.klpod221.site/" />
-  <meta property="og:image:image_alt" value="https://wedding.klpod221.site/images/bg.jpg" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Da y Lu" />
+  <meta property="og:description" content="Fiesta de Casamiento" />
+  <meta property="og:url" content="https://wedding.klpod221.site/" />
+  <meta property="og:image" content="https://wedding.klpod221.site/images/bg.jpg" />
 
   <!-- make this site invisible to search engines -->
   <meta name="robots" content="noindex, nofollow" />
+
+  <!-- Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 
   <!-- style for preloader -->
   <style>
@@ -30,17 +31,20 @@
       inset: 0;
       z-index: 9999;
       overflow: hidden;
-      background-color: #6f70b9;
+      background-color: #c8caca;
       transition: all 0.6s ease-out;
       width: 100vw;
       height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
     }
 
     #preloader:before,
     #preloader:after {
       content: "";
       position: absolute;
-      border: 4px solid #6f70b9;
+      border: 4px solid #fff;
       border-radius: 50%;
       animation: animate-preloader 2s cubic-bezier(0, 0.2, 0.8, 1) infinite;
     }
@@ -69,24 +73,21 @@
   </style>
 </head>
 
-<body class="bg-primary-light text-text font-sans">
+<body class=" text-text font-sans">
   <div id="preloader"></div>
-
-  <header class="group">
-  </header>
 
   <main class="w-full overflow-x-hidden">
 
     <section id="home" class="relative w-screen h-screen">
-      <div class="fixed top-0 left-0 w-screen h-screen -z-10 flex flex-col items-center justify-end" />
-        <div class="w-full h-full">
-          <img loading="lazy" src="/images/IMG_0057.JPG" alt="background" class="object-cover w-auto h-full mx-auto" />
+      <div class="fixed top-0 left-0 w-screen h-screen -z-10 flex flex-col items-center justify-end">
+        <div class="bg-bidwellBlue-300 w-full h-full">
+            <img loading="lazy" src="/images/canva.png" alt="background" class="object-contain object-top h-full mx-auto mt-0" />
         </div>
       </div>
 
       <div class="fixed top-0 left-0 w-screen h-screen -z-10">
         <div class="flex flex-col items-center pt-[90px] w-full h-screen">
-          <div class="absolute bottom-8 animate-bounce">
+          <div class="absolute bottom-14 animate-bounce">
             <a href="#story">
               <i class="fas fa-chevron-down text-3xl"></i>
             </a>
@@ -94,26 +95,32 @@
         </div>
       </div>
     </section>
-    <section id="details" class="relative">
-      <div class="w-full bg-gray-50 py-10 md:py-28 px-1">
-        <div class="flex flex-wrap max-w-4xl mx-auto">
-          <div class="w-full md:w-1/2 p-4 relative">
-            <div class="tracking-[1em] text-2xl md:text-2xl font-brandon uppercase z-10 relative mt-10"
-              data-aos="fade-right">
-              <p>Fiesta</p>
-              <p>De</p>
-              <p>Casamiento</p>
-            </div>
 
-            <div class="flex flex-col space-y-4 mt-5 rounded-lg z-10 relative">
+    <section id="details" class="relative py-10 md:py-10 px-4 bg-bidwellBlue-500">
+      <div class="max-w-4xl mx-auto">
+        <div class="flex flex-wrap">
+          <div class="w-full p-4">
+            <div class="tracking-custom text-2xl md:text-4xl font-brandon uppercase z-10 relative mt-10" data-aos="fade-right">
+              <p class="text-center">Fiesta De Casamiento</p>
+            </div>
+            <style>
+              @media (max-width: 375px) {
+                .tracking-custom {
+                  font-size: 1.5rem;
+                  line-height: 1.2;
+                }
+              }
+            </style>
+          </div>
+          <div class="w-full md:w-1/2 p-4">
+            <div class="flex flex-col space-y-4 mt-0 rounded-lg z-10 relative">
               <table class="w-full text-center">
-                <caption class="uppercase text-secondary text-xl font-bold mb-1" data-aos="fade-right"
-                  data-aos-delay="200">
+                <caption class="uppercase text-secondary text-xl font-bold mb-1" data-aos="fade-right" data-aos-delay="200">
                   8 de Noviembre, 2025
                 </caption>
 
                 <thead data-aos="fade-right" data-aos-delay="250">
-                  <tr class="border-y border-secondary">
+                  <tr class="border-y border-fluoriteGreen-500">
                     <th class="pt-1" abbr="Monday" scope="col" title="Monday">LUN</th>
                     <th class="pt-1" abbr="Tuesday" scope="col" title="Tuesday">MAR</th>
                     <th class="pt-1" abbr="Wednesday" scope="col" title="Wednesday">MIE</th>
@@ -142,8 +149,7 @@
                     <td>7</td>
                     <td>
                       <div class="flex items-center justify-center">
-                        <span
-                          class="w-6 h-6 rounded-full bg-secondary flex items-center justify-center font-bold text-white">
+                        <span class="w-6 h-6 rounded-full bg-fluoriteGreen-500 flex items-center justify-center font-bold text-white">
                           8
                         </span>
                       </div>
@@ -184,56 +190,35 @@
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
                     <td>&nbsp;</td>
-                    <td>&nbsp;</td>
                   </tr>
                 </tbody>
               </table>
-
-              <div class="flex justify-between border-t border-secondary pt-4" data-aos="fade-right"
-                data-aos-delay="350">
-                <div class="flex flex-col items-center">
-                  <span class="text-4xl" id="days">00</span>
-                  <span class="text-lg">Días</span>
-                </div>
-                <div class="flex flex-col items-center">
-                  <span class="text-4xl" id="hours">00</span>
-                  <span class="text-lg">Horas</span>
-                </div>
-                <div class="flex flex-col items-center">
-                  <span class="text-4xl" id="minutes">00</span>
-                  <span class="text-lg">Minutos</span>
-                </div>
-                <div class="flex flex-col items-center">
-                  <span class="text-4xl" id="seconds">00</span>
-                  <span class="text-lg">Segundos</span>
-                </div>
-              </div>
             </div>
           </div>
 
           <div class="w-full md:w-1/2 p-4">
             <div class="flex flex-col space-y-8">
-              <div class="flex flex-col space-y-2">
-                <h3 class="text-secondary text-2xl font-bold" data-aos="fade-left" data-aos-delay="300">
+              <div class="flex flex-col space-y-2" data-aos="fade-left" data-aos-delay="300">
+                <h3 class="text-secondary text-2xl font-bold" >
                   Lugar
                 </h3>
 
-                <p class="text-xl" data-aos="fade-left" data-aos-delay="350">
+                <p class="text-xl">
                   Ecoparque
                 </p>
-                <p data-aos="fade-left" data-aos-delay="400">
+                <p>
                   Av Sarmiento 2725, Cdad. Autónoma de Buenos Aires, Argentina
                 </p>
-                <h3 class="text-secondary text-2xl font-bold" data-aos="fade-left" data-aos-delay="300">
+                <h3 class="text-secondary text-2xl font-bold">
                   Hora
                 </h3>
-                <p class="text-xl" data-aos="fade-left" data-aos-delay="350">
+                <p class="text-xl">
                   18hs
                 </p>
-                <h3 class="text-secondary text-2xl font-bold" data-aos="fade-left" data-aos-delay="300">
-                  Código de Vestimenta
+                <h3 class="text-secondary text-2xl font-bold">
+                  Vestimenta
                 </h3>
-                <p class="text-xl" data-aos="fade-left" data-aos-delay="350">
+                <p class="text-xl">
                   Elegante
                 </p>
               </div>
@@ -242,12 +227,6 @@
         </div>
       </div>
     </section>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
-  </br>
   </main>
 
   <script type="module" src="/src/js/main.js"></script>
