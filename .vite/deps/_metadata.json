@@ -1,0 +1,31 @@
+{
+  "hash": "9559a7c9",
+  "configHash": "5f6c55a1",
+  "lockfileHash": "2c6eab02",
+  "browserHash": "50fb18c7",
+  "optimized": {
+    "@fortawesome/fontawesome-free/js/all.js": {
+      "src": "../../node_modules/@fortawesome/fontawesome-free/js/all.js",
+      "file": "@fortawesome_fontawesome-free_js_all__js.js",
+      "fileHash": "1c9709f5",
+      "needsInterop": true
+    },
+    "jquery": {
+      "src": "../../node_modules/jquery/dist/jquery.js",
+      "file": "jquery.js",
+      "fileHash": "1b10055f",
+      "needsInterop": true
+    },
+    "aos": {
+      "src": "../../node_modules/aos/dist/aos.esm.js",
+      "file": "aos.js",
+      "fileHash": "7b03d13d",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-5WRI5ZAA": {
+      "file": "chunk-5WRI5ZAA.js"
+    }
+  }
+}
