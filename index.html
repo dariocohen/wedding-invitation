@@ -80,17 +80,16 @@
     <section id="home" class="relative w-screen h-screen">
       <div class="fixed top-0 left-0 w-screen h-screen -z-10 flex flex-col items-center justify-end">
         <div class="bg-bidwellBlue-300 w-full h-full">
-            <img loading="lazy" src="images/canva.png" alt="background" class="object-contain object-top h-full mx-auto mt-0" />
+          <img loading="lazy" src="images/canva.png" alt="background"
+            class="object-contain object-top h-full mx-auto mt-0" />
         </div>
       </div>
 
       <div class="static">
-        <div class="absolute bottom-0 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-          <div class="animate-bounce">
-            <a href="#main">
-              <i class="fas fa-chevron-down text-3xl"></i>
-            </a>
-          </div>
+        <div class="absolute bottom-[10vh] left-1/2 transform -translate-x-1/2">
+          <a href="#main">
+            <i style="color: white" class="animate-bounce fas fa-chevron-down text-3xl"></i>
+          </a>
         </div>
       </div>
     </section>
@@ -99,22 +98,15 @@
       <div class="max-w-4xl mx-auto">
         <div class="flex flex-wrap">
           <div class="w-full p-4">
-            <div class="tracking-custom text-6xl md:text-4xl font-dancing z-10 relative mt-10" data-aos="fade-right">
+            <div class="tracking-custom text-[8vw] font-dancing z-10 relative" data-aos="fade-right">
               <p class="text-center">Agendate la fecha</p>
             </div>
-            <style>
-              @media (max-width: 375px) {
-                .tracking-custom {
-                  font-size: 1.5rem;
-                  line-height: 1.2;
-                }
-              }
-            </style>
           </div>
           <div class="w-full md:w-1/2 p-4">
             <div class="flex flex-col space-y-4 mt-0 rounded-lg z-10 relative">
               <table class="w-full text-center">
-                <caption class="uppercase text-secondary text-xl font-bold mb-1" data-aos="fade-right" data-aos-delay="200">
+                <caption class="uppercase text-secondary text-xl font-bold mb-1" data-aos="fade-right"
+                  data-aos-delay="200">
                   8 de Noviembre, 2025
                 </caption>
 
@@ -148,7 +140,8 @@
                     <td>7</td>
                     <td>
                       <div class="flex items-center justify-center">
-                        <span class="w-6 h-6 rounded-full bg-fluoriteGreen-500 flex items-center justify-center font-bold text-white">
+                        <span
+                          class="w-6 h-6 rounded-full bg-fluoriteGreen-500 flex items-center justify-center font-bold text-white">
                           8
                         </span>
                       </div>
@@ -195,7 +188,7 @@
             </div>
           </div>
 
-          <div class="w-full p-4">
+          <!-- <div class="w-full p-4">
             <div class="tracking-custom text-2xl md:text-4xl font-brandon uppercase z-10 relative mt-10" data-aos="fade-right">
               <p>Fiesta de Casamiento</p>
             </div>
@@ -207,12 +200,16 @@
                 }
               }
             </style>
-          </div>
+          </div> -->
 
           <div class="w-full md:w-1/2 p-4">
             <div class="flex flex-col space-y-8">
+              <div class="tracking-custom text-2xl md:text-4xl font-brandon uppercase z-10 relative"
+                data-aos="fade-right">
+                <p>Fiesta de Casamiento</p>
+              </div>
               <div class="flex flex-col space-y-2" data-aos="fade-left" data-aos-delay="300">
-                <h2 class="text-secondary text-2xl font-bold" >
+                <h2 class="text-secondary text-2xl font-bold">
                   Lugar
                 </h2>
 
@@ -235,6 +232,12 @@
                   Elegante
                 </p>
               </div>
+            </div>
+
+          </div>
+          <div class="w-full p-4">
+            <div class="tracking-custom text-2xl font-dancing z-10 relative">
+              <p class="text-center">Más info en los próximos meses</p>
             </div>
           </div>
         </div>
